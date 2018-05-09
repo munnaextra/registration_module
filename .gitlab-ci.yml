@@ -1,0 +1,41 @@
+# This file is a template, and might need editing before it works on your project.
+---
+# Build JAVA applications using Apache Maven (http://maven.apache.org)
+# For docker image tags see https://hub.docker.com/_/maven/
+#
+# For general lifecycle information see https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+#
+
+# Use Java 8
+image: maven:3.3.9-jdk-8
+
+# Cache downloaded dependencies and plugins between builds.
+# To keep cache across branches add 'key: "$CI_JOB_REF_NAME"'
+cache:
+  paths:
+    - .m2/repository
+    
+stages:
+  - validate
+  - test
+  - build
+
+# This will only validate and compile stuff and run e.g. maven-enforcer-plugin.
+# Because some enforcer rules might check dependency convergence and class duplications
+# we use `test-compile` here instead of `validate`, so the correct classpath is picked up.
+validate_module:
+  stage: validate
+  script:
+    - 'mvn package -DskipTests'
+    - 'mvn test-compile'
+    
+test_module:
+  stage: test
+  script:
+    - 'mvn package -DskipTests'
+    - 'mvn test'
+    
+build_module:
+  stage: build
+  script:
+    - 'mvn clean install'

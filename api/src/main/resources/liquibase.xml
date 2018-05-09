@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+	<!-- See http://www.liquibase.org/manual/home#available_database_refactorings 
+		for a list of supported elements and attributes -->
+
+	<changeSet author="prateekt" id="2018-04-12">
+		<insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="11"/>
+            <column name="name" value="Email"/>
+            <column name="description" value="Email"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa001"/>
+            
+        </insert>
+        
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="12"/>
+            <column name="name" value="LanguagesSpoken"/>
+            <column name="description" value="Languages Spoken"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa002"/>
+        </insert>
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="13"/>
+            <column name="name" value="LegalBasis"/>
+            <column name="description" value="Legal Basis"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa003"/>
+        </insert>
+        
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="14"/>
+            <column name="name" value="EmergencyContactRelationship"/>
+            <column name="description" value="Emergency Contact Relationship"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa004"/>
+        </insert>
+        
+        
+         <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="15"/>
+            <column name="name" value="EmergencyContactName"/>
+            <column name="description" value="Emergency Contact Name"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa005"/>
+        </insert>
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="16"/>
+            <column name="name" value="EmergencyContactPhone"/>
+            <column name="description" value="EmergencyContactPhone"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa006"/>
+        </insert>
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="17"/>
+            <column name="name" value="BackupContactRelationship"/>
+            <column name="description" value="Backup Contact Relationship"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa007"/>
+        </insert>
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="18"/>
+            <column name="name" value="BackupContactName"/>
+            <column name="description" value="Backup Contact Name"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa008"/>
+        </insert>
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="19"/>
+            <column name="name" value="BackupContactPhone"/>
+            <column name="description" value="BackupContactPhone"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa014"/>
+        </insert>
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="20"/>
+            <column name="name" value="BenfType"/>
+            <column name="description" value="Beneficiary Population Type"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa009"/>
+        </insert>
+        
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="21"/>
+            <column name="name" value="LegacyId"/>
+            <column name="description" value="Legacy Id"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa010"/>
+        </insert>
+        
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="22"/>
+            <column name="name" value="Occupation"/>
+            <column name="description" value="Occupation"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa011"/>
+        </insert>
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="23"/>
+            <column name="name" value="hdyk"/>
+            <column name="description" value="How Did You Know"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa012"/>
+        </insert>
+        
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="24"/>
+            <column name="name" value="Status"/>
+            <column name="description" value="Status"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa013"/>
+        </insert>
+        
+        <insert tableName="person_attribute_type">
+            <column name="person_attribute_type_id" valueNumeric="25"/>
+            <column name="name" value="PermanentId"/>
+            <column name="description" value="Permanent Identifier"/>
+            <column name="format" value="java.lang.String"/>
+            <column name="foreign_key" valueNumeric="0"/>
+            <column name="searchable" valueBoolean="false"/>
+            <column name="creator" valueNumeric="1"/>
+            <column name="date_created" valueDate="2018-04-12"/>
+            <column name="changed_by"/>
+            <column name="date_changed"/>
+            <column name="retired" valueBoolean="false"/>
+            <column name="retired_by"/>
+            <column name="date_retired"/>
+            <column name="retire_reason"/>
+            <column name="sort_weight" value="15"/>
+            <column name="searchable" value="1"/>
+            <column name="uuid" value="b98559eb-3cca-11e8-b9b8-484d7eaaa015"/>
+        </insert>
+        
+        
+	</changeSet>
+	
+
+</databaseChangeLog>
